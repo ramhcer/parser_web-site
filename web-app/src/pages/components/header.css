@@ -1,0 +1,47 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; 
+  background: transparent; 
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+
+header {
+    width: 100%;
+    background-color: #5e676e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+header h1, header .logo {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.lang-select {
+    margin: 0;
+    background-color: #f4f4ad;
+    color: #9fbc84;
+    border-radius: 5px;
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    transition: background 0.2s;
+}
+
+.lang-select:focus {
+    outline: none;
+    background-color: #eaeab0;
+}

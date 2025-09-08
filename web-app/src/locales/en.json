@@ -1,5 +1,6 @@
 {
     "header": {
+        "lang": "Language",
         "title": "Parser",
         "help": "Help"
     }

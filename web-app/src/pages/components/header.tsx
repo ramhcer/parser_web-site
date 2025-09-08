@@ -4,8 +4,8 @@ import './header.css';
 import { useTranslation } from 'react-i18next';
 
 const languages = [
-    { code: "en", label: "English" },
-    { code: "ru", label: "Русский" }
+    { code: "en", label: "EN" },
+    { code: "ru", label: "РУ" }
 ];
 
 function Header() {
@@ -22,8 +22,7 @@ function Header() {
             <div className='title'>
                 <div>{t('header.title')}</div>
             </div>
-            <div style={{ marginTop: "1rem" }}>
-                <label htmlFor="lang-select" style={{ marginRight: "0.5rem" }}>Language:</label>
+            <div className="lang-select">
                 <select id="lang-select" value={lang} onChange={handleChange} style={{ padding: "0.3rem" }}>
                     {languages.map(l => (
                         <option key={l.code} value={l.code}>{l.label}</option>
